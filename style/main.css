@@ -1,0 +1,77 @@
+/* Reset */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis */
+:root { 
+    --laranja: #D6552E;
+    --amarelo1: #F0E943;
+    --amarelo2: #EBCB05;
+    --azul: #316EB6;
+    --vermelho: #D33F59;
+    --preta: #141414;
+}
+
+body {
+    background: var(--amarelo2);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* Menu */
+header .container {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    background-color: var(--laranja);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 10px 0 #141414;
+}
+
+header .logo {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    width: 11rem;
+}
+
+header nav {
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 10px;
+    font-family: 'Source Code Pro', monospace;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+header nav a strong {
+    color: #1E436E;
+}
+
+.portal-btn {
+    font-family: 'Source Code Pro', monospace;
+    width: 50%;
+    padding: 6px;
+    border: 2px solid #163354;
+    border-radius: 5px;
+    background-color: var(--azul);
+    box-shadow: -2px 4px 0 #1E436E, -3px 4px 0 #163354;
+}
+
+.portal-btn:active {
+    box-shadow: inset -3px 3px 0 #1E436E;
+    font-size: 0.96rem;
+}
