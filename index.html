@@ -7,6 +7,8 @@
     <link rel="icon" href="img/lupa-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/main.css">
     
+    <script defer src="js/script.js"></script>
+
     <title>PokemonFound</title>
 </head>
 <body>
@@ -32,10 +34,34 @@
                     <span class="poke-text">Nome</span> ou 
                     <span class="poke-text">Número</span>
                 </h4>
-                <form action="">
-                    <input type="search" class="input-search" placeholder="Pikachu" required>
+                <form action="" class="form-search">
+                    <input type="search" class="input-search" placeholder="Ex: Pikachu" required>
                 </form> 
                 <button class="btn-search"><strong>Pesquisar</strong></button>
+            </div>
+            <div class="infopokemon-right">
+                <div class="poke-visual">
+                    <div class="effect-img">
+                        <img src="" alt="" class="poke-img">
+                        <img src="img/background-pokemon.jpg" alt="" class="background-img">
+                    </div>
+                </div>
+                <div class="poke-info">
+                    <h4 class="poke-title">
+                        <span class="poke-id"></span>
+                        <span class="poke-name">Pikachu</span>
+                    </h4>
+                    <hr>
+                    <div class="poke-desc">
+                        <div class="desc-left">
+                            Tipo:<span class="poke-type"></span>
+                            Altura:<span class="poke-height"></span>
+                        </div>
+                        <div class="desc-right">
+                            Moves:<span class="poke-move"></span><br>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
