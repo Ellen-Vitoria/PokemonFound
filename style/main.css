@@ -22,7 +22,7 @@
 body {
     background: var(--amarelo2);
     font-family: 'Source Code Pro', monospace;
-    color: white;
+    color: #FFF;
 }
 
 /* Menu */
@@ -35,7 +35,7 @@ header .container {
     background-color: var(--laranja);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    box-shadow: 0 0 10px 0 #141414;
+    box-shadow: 0 0 10px 0 var(--preta);
 }
 
 header .logo {
@@ -82,7 +82,7 @@ header nav a strong {
 /* Conteúdo Principal */
 main {
     font-size: 20px;
-    padding: 35px;
+    padding: 50px;
     margin: 0 55px;
     min-height: 60vh;
 }
@@ -256,4 +256,29 @@ main .container {
 
 .poke-type {
     margin-bottom: 1.5%;
+}
+
+/* Rodapé */
+footer {
+    min-height: 35vh;
+    background-color: var(--laranja);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 10px 0 var(--preta);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.footer-content {
+    width: 100%;
+    min-height: 40vh;
+    padding: 0 35px;
+    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.ash-img {
+    width: 15rem;
 }
